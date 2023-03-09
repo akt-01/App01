@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap");
+
+:root {
+  font-family: "Baloo Bhai 2", cursive;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Make any text in app unselectable (not applicable on inputs and simillar elemnets) */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  /* Dark Theme */
+  --sidebar-color--dark: #1f2728;
+  --background-color--dark: #2f363a;
+  --titlebar-color--dark: #14171a;
+  --title-text-color--dark: #ffffff;
+  --primary-text-color--dark: #c6c6c6;
+  --secondary-text-color--dark: #a6a6a6;
+  --subheader-text-color--dark: #cccccc;
+  --paragraph-text-color--dark: #efefef;
+  --hover-color--dark: rgba(255, 255, 255, 0.1);
+  --active-color--dark: rgba(255, 255, 255, 0.2);
+  --success-color--dark: #99cc00;
+  --info-color--dark: #3c8dbc;
+  --warning-color--dark: #ffd43b;
+  --danger-color--dark: #ff6666;
+  --icon-color--dark: #ffffff;
+
+  /* Light Theme */
+  --sidebar-color: #e0e1e5;
+  --background-color: #ffffff;
+  --titlebar-color: #d2d3d7;
+  --title-text-color: #212121;
+  --primary-text-color: #424242;
+  --secondary-text-color: #616161;
+  --subheader-text-color: #757575;
+  --paragraph-text-color: #9e9e9e;
+  --hover-color: rgba(0, 0, 0, 0.1);
+  --active-color: rgba(0, 0, 0, 0.2);
+  --success-color: #4caf50;
+  --info-color: #2196f3;
+  --warning-color: #ffc107;
+  --danger-color: #f44336;
+  --icon-color: #212121;
+
+  color: var(--paragraph-text-color)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: color 0.25s ease, background-color 0.4s ease;
+}
+
+body {
+  background-color: var(--background-color);
+}

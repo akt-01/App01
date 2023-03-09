@@ -1,0 +1,54 @@
+@import "./base/config";
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+
+  &.dark {
+    --sidebar-color: var(--sidebar-color--dark);
+    --background-color: var(--background-color--dark);
+    --titlebar-color: var(--titlebar-color--dark);
+    --title-text-color: var(--title-text-color--dark);
+    --primary-text-color: var(--primary-text-color--dark);
+    --secondary-text-color: var(--secondary-text-color--dark);
+    --subheader-text-color: var(--subheader-text-color--dark);
+    --paragraph-text-color: var(--paragraph-text-color--dark);
+    --hover-color: var(--hover-color--dark);
+    --active-color: var(--active-color--dark);
+    --success-color: var(--success-color--dark);
+    --info-color: var(--info-color--dark);
+    --warning-color: var(--warning-color--dark);
+    --danger-color: var(--danger-color--dark);
+    --icon-color: var(--icon-color--dark);
+  }
+
+  &.system {
+    @media (prefers-color-scheme: dark) {
+      --sidebar-color: var(--sidebar-color--dark);
+      --background-color: var(--background-color--dark);
+      --titlebar-color: var(--titlebar-color--dark);
+      --title-text-color: var(--title-text-color--dark);
+      --primary-text-color: var(--primary-text-color--dark);
+      --secondary-text-color: var(--secondary-text-color--dark);
+      --subheader-text-color: var(--subheader-text-color--dark);
+      --paragraph-text-color: var(--paragraph-text-color--dark);
+      --hover-color: var(--hover-color--dark);
+      --active-color: var(--active-color--dark);
+      --success-color: var(--success-color--dark);
+      --info-color: var(--info-color--dark);
+      --warning-color: var(--warning-color--dark);
+      --danger-color: var(--danger-color--dark);
+      --icon-color: var(--icon-color--dark);
+    }
+  }
+
+  main {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: calc(100% - 25px);
+  }
+}
